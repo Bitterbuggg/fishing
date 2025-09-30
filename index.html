@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+  <head>
+      <script>
+        (function () {
+          const LS_KEY = "app-theme";
+          const saved = localStorage.getItem(LS_KEY);
+          const systemPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const initial = saved || (systemPrefersDark ? "dark" : "light"); // default choice
+          document.documentElement.setAttribute("data-theme", initial);
+          // Optional: if you want Tailwind's `dark:` variant to work too:
+          if (initial === "dark") document.documentElement.classList.add("dark");
+        })();
+      </script>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Security Awareness Admin</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

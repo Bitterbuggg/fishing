@@ -7,7 +7,7 @@ import { AuthProvider } from "./contexts/AuthContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/fishing">
       <AuthProvider>
         <App />
       </AuthProvider>

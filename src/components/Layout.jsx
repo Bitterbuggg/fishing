@@ -12,6 +12,7 @@ const navItems = [
   { to: "/users", label: "Users", icon: "👥" },
   { to: "/reports", label: "Reports", icon: "📑" },
   { to: "/training", label: "Training", icon: "🎓" },
+  { to: "/quizzes", label: "Quizzes", icon: "🧠" },
   { to: "/analytics", label: "Analytics", icon: "📈" },
   { to: "/settings", label: "Settings", icon: "⚙️" },
 ];

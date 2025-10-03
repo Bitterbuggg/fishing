@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound.jsx";
 import Login from "./pages/Login.jsx";
 import Landing from "./pages/Landing.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import Quizzes from "./pages/Quizzes.jsx";
 // ...
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/training" element={<Training />} />
         <Route path="/l" element={<Landing />} />   {/* feedback click logger */}
+        <Route path="/quizzes" element={<Quizzes />} />
       </Route>
 
         {/* Admin-only */}
